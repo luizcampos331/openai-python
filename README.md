@@ -78,7 +78,7 @@ start-chat
 
 To execute unit tests:
 ```
-python -m unittest discover tests
+run-tests
 ```
 
 ## :bust_in_silhouette: Author
