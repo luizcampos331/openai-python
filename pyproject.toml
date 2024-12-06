@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openai-python"
+version = "0.1.0"
+description = "A CLI chatbot using OpenAI API"
+readme = "README.md"
+authors = [{name = "Luiz Eduardo Campos da Silva", email = "luizcampos331@gmail.com"}]
+license = {text = "MIT"}
+dependencies = [
+    "openai==1.56.0",
+    "python-dotenv==1.0.0",
+]
+
+[project.scripts]
+start-chat = "src.main:main"
+run-tests = "src.main:run_tests"
+
+[tool.setuptools]
+packages = ["src"]
